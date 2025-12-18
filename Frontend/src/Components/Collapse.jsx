@@ -8,7 +8,7 @@ export default function Collapse({ title, content }) {
     <div className="collapse">
       <button className="collapse__header" onClick={() => setOpen(!open)}>
         <span>{title}</span>
-        <span className={`collapse__arrow ${open ? "open" : ""}`}>⌃</span>
+        <span className={`collapse__arrow ${open ? "open" : ""}`}><i className="fa-solid fa-chevron-up"></i></span>
       </button>
 
       {open && (

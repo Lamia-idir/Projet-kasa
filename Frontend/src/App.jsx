@@ -9,13 +9,13 @@ function App() {
   return (
     <>
       <Header />
-
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/apropos" element={<Apropos />} />
+        {/* <Route path="/logement/:id" element={<Logement />} /> */}
         <Route path="*" element={<ErreurPage />} />
       </Routes>
-
+    
       <Footer />
     </>
   );

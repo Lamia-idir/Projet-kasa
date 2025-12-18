@@ -1,8 +1,9 @@
 .collapse {
-  width: 100%;
-  margin-bottom: 30px;
+  width: 75%;
+  margin: 0 auto 30px auto;
+  display: flex;
+  flex-direction: column;
 }
-
 .collapse__header {
   width: 100%;
   background: #ff6060;
@@ -10,8 +11,8 @@
   border: none;
   border-radius: 5px;
   padding: 15px 20px;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 700;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,12 +21,11 @@
 
 .collapse__arrow {
   font-size: 24px;
-  transform: rotate(180deg);
   transition: transform 0.3s ease;
 }
 
 .collapse__arrow.open {
-  transform: rotate(0deg);
+  transform: rotate(-180deg);
 }
 
 .collapse__content {
@@ -34,4 +34,10 @@
   padding: 20px;
   border-radius: 0 0 5px 5px;
   font-size: 18px;
+   font-family: "Montserrat", sans-serif;
+}
+.collapse__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
 }

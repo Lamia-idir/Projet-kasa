@@ -1,0 +1,38 @@
+.header {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 210px;
+}
+
+.header__links {
+  display: flex;
+  gap: 50px;
+}
+
+.header__links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+   font-family: "Montserrat", sans-serif;
+  
+}
+
+.header__links a {
+  text-decoration: none;
+  border-bottom: 1.5px solid transparent; /* réserve l’espace */
+}
+ .header__links a.active {
+  border-bottom: 1.5px solid #000;
+}
