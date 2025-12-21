@@ -4,6 +4,7 @@ import Apropos from "./Pages/Apropos";
 import ErreurPage from "./Pages/Erreurpage";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
+import Logement from "./Pages/Logement";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/apropos" element={<Apropos />} />
-        {/* <Route path="/logement/:id" element={<Logement />} /> */}
+        <Route path="/logement/:id" element={<Logement />} />
         <Route path="*" element={<ErreurPage />} />
       </Routes>
     

@@ -1,0 +1,118 @@
+/* Container des 2 collapses (Description + Équipements) */
+.logement__collapses {
+  display: flex;
+  gap: 75px;
+  margin-top: 30px;
+}
+
+/* Chaque bloc collapse prend la moitié */
+.collapse {
+  width: 100%;
+}
+
+/* Header rouge */
+.collapse__header {
+  width: 100%;
+  background: #ff6060;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 20px;
+  font-size: 18px;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* Icône flèche */
+.collapse__icon {
+  font-size: 28px;
+  line-height: 1;
+  transform: rotate(0deg);
+  transition: transform 0.2s ease;
+}
+
+/* Quand c'est ouvert (si tu ajoutes .open au parent ou à l'icon) */
+.collapse.open .collapse__icon,
+.collapse__icon.open {
+  transform: rotate(180deg);
+}
+
+/* Contenu gris */
+.collapse__content {
+  background: #f6f6f6;
+  padding: 25px 20px;
+  border-radius: 0 0 10px 10px;
+
+  font-size: 18px;
+  line-height: 28px;
+  color: #000;
+}
+
+/* Liste équipements */
+.equipments {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.equipments li {
+  margin-bottom: 6px;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .logement__collapses {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .collapse__header {
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+
+  .collapse__content {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 20px 16px;
+  }
+
+  .collapse__icon {
+    font-size: 22px;
+  }
+}
+
+/* ul */
+.equipments {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*  tags et ratting */
+
+.logement__tags-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 30px;
+}
+
+/* Mobile : tags en haut, étoiles à droite en dessous (comme Kasa) */
+@media (max-width: 768px) {
+  .logement__tags-rating {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .logement__tags-rating .rating {
+    align-self: flex-end;
+  }
+}
+

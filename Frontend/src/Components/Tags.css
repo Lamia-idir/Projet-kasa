@@ -1,0 +1,15 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;   /* si 4 tags, ça passe à la ligne */
+  gap: 10px;
+}
+
+.tags__item {
+  background: #ff6060;
+  color: #fff;
+  border-radius: 10px;
+  padding: 6px 22px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+}

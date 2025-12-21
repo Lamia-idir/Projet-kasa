@@ -1,8 +1,9 @@
 import { useState } from "react";
 import "./Collapse.css";
 
-export default function Collapse({ title, content }) {
+export default function Collapse({ title, children, content}) {
   const [open, setOpen] = useState(false);
+   const body = children ?? content;
 
   return (
     <div className="collapse">
@@ -13,7 +14,7 @@ export default function Collapse({ title, content }) {
 
       {open && (
         <div className="collapse__content">
-          <p>{content}</p>
+          <p> {body}</p>
         </div>
       )}
     </div>

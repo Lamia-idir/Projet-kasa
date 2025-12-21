@@ -1,0 +1,13 @@
+.rating {
+  display: flex;
+  gap: 10px;
+}
+
+.rating .fa-star {
+  font-size: 24px;
+  color: #e3e3e3; /* gris */
+}
+
+.rating .fa-star.is-active {
+  color: #ff6060; /* rouge */
+}
