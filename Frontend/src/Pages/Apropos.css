@@ -1,0 +1,16 @@
+/* .apropos{
+    width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+.apropos{
+  display: flex;
+  flex-direction: column;
+}
+
+.apropos > *{
+  max-width: 900px;
+}

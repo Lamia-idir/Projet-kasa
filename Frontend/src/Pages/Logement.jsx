@@ -1,5 +1,7 @@
 
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
+
 import { useEffect, useState } from "react";
 import Slidshow from "../Components/Slidshow";
 import Collapse from "../Components/Collapse";
@@ -12,27 +14,48 @@ import Host from "../Components/Host";
 export default function Logement() {
   const { id } = useParams();
   const [logement, setLogement] = useState(null);
+  const [loading, setLoading] = useState(true);
+const [notFound, setNotFound] = useState(false);
 
-  useEffect(() => {
-    fetch(`http://localhost:8080/api/properties/${id}`)
-      .then((res) => res.json())
-      .then((data) => setLogement(data))
-      .catch(console.error);
-  }, [id]);
 
-  if (!logement) return <p>Chargement...</p>;
+ useEffect(() => {
+  setLoading(true);
+  setNotFound(false);
+
+  fetch(`http://localhost:8080/api/properties/${id}`)
+    .then((res) => {
+      if (!res.ok) {
+        // ex: 404 => id invalide
+        setNotFound(true);
+        return null;
+      }
+      return res.json();
+    })
+    .then((data) => {
+      if (!data) return;
+      setLogement(data);
+    })
+    .catch(() => setNotFound(true))
+    .finally(() => setLoading(false));
+}, [id]);
+if (loading) return <p>Chargement...</p>;
+if (notFound) return <Navigate to="/error" replace />;
 
   return (
-    <div>
-         <Slidshow pictures={logement.pictures}/>
-         <h1>{logement.title}</h1>
-         <p>{logement.location}</p>
-         <Host host={logement.host} />
+    <div className="logement-space"> 
+        <Slidshow pictures={logement.pictures}/>
+        <div className="position-row">
+            <div>
+              <h1 className="logement__title">{logement.title}</h1>
+              <p>{logement.location}</p>
+              <Tags tags={logement.tags} />
+            </div>
       
-      <div className="logement__tags-rating">
-         <Tags tags={logement.tags} />
-         <Rating rating={logement.rating} />
-      </div>
+            <div className="logement__host-rating">
+              <Host host={logement.host} />
+              <Rating rating={logement.rating} />
+             </div>
+        </div>     
 
        <div className="logement__collapses">
 
@@ -50,7 +73,7 @@ export default function Logement() {
             </ul>
          </Collapse>
 
-      </div>
+        </div>
     </div>
   );
 }

@@ -9,7 +9,7 @@ import Logement from "./Pages/Logement";
 function App() {
   return (
     <>
-      <Header />
+      <Header  />
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/apropos" element={<Apropos />} />

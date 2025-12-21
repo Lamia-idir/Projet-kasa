@@ -1,11 +1,11 @@
 .collapse {
-  width: 75%;
+  /* width: 75%; */
   margin: 0 auto 30px auto;
   display: flex;
   flex-direction: column;
 }
 .collapse__header {
-  width: 100%;
+  /* width: 100%; */
   background: #ff6060;
   color: white;
   border: none;
