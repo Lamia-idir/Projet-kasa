@@ -4,6 +4,7 @@
   height: 300px;
   border-radius: 20px;
   overflow: hidden;
+  margin-bottom: 0px;
 }
 
 .slidshow__img {

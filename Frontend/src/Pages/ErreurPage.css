@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 40px;
   padding: 40px 20px;
   text-align: center;
    font-family: "Montserrat", sans-serif;
@@ -31,3 +31,26 @@
   color: #000;
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .error__code {
+  font-size: 80px;
+  font-weight: 700;
+  color: #ff6060;
+  line-height: 1;
+}
+.error {
+  min-height: 20px;
+  gap: 80px;
+ 
+}
+.error__text {
+  margin: 0;
+  font-size:16px;
+  font-weight: 500;
+}
+.error__link {
+  font-size: 16px;
+  font-weight: 500;
+}
+    }

@@ -1,6 +1,6 @@
 .banner {
   position: relative;
-  height: 223px;
+  height: 180px;
   border-radius: 25px;
   overflow: hidden;
   margin: 40px auto;
@@ -17,7 +17,7 @@
 
 .banner__text {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;

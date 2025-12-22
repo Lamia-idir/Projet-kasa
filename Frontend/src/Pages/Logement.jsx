@@ -17,7 +17,6 @@ export default function Logement() {
   const [loading, setLoading] = useState(true);
 const [notFound, setNotFound] = useState(false);
 
-
  useEffect(() => {
   setLoading(true);
   setNotFound(false);
@@ -40,6 +39,8 @@ const [notFound, setNotFound] = useState(false);
 }, [id]);
 if (loading) return <p>Chargement...</p>;
 if (notFound) return <Navigate to="/error" replace />;
+if (!logement) return null;
+
 
   return (
     <div className="logement-space"> 
@@ -47,7 +48,7 @@ if (notFound) return <Navigate to="/error" replace />;
         <div className="position-row">
             <div>
               <h1 className="logement__title">{logement.title}</h1>
-              <p>{logement.location}</p>
+              <p className="place-tile">{logement.location}</p>
               <Tags tags={logement.tags} />
             </div>
       

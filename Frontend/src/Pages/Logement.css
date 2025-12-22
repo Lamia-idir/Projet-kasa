@@ -119,7 +119,7 @@
 .logement__host-rating {
   display: flex;
   flex-direction: column;
-  gap:50px;
+  gap:30px;
 }
 
 /* Mobile : tags en haut, étoiles à droite en dessous (comme Kasa) */
