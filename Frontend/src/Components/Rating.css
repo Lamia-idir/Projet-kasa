@@ -1,6 +1,6 @@
 .rating {
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
 
 .rating .fa-star {
@@ -11,3 +11,15 @@
 .rating .fa-star.is-active {
   color: #ff6060; /* rouge */
 }
+
+@media (max-width: 768px){
+
+.rating .fa-star{
+
+font-size: 16px;
+
+}
+.rating{
+  gap: 5px;
+}
+  }

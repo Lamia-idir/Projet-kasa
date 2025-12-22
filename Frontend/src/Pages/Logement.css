@@ -8,16 +8,16 @@
 }
 .position-row{
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 24px;
+  flex-direction: row;
+  justify-content: space-between; 
+   gap: 24px;
   margin-top: 20px;
 }
 
 
-.position-row > div:first-child{
+/* .position-row > div:first-child{
   flex: 1;              
-}
+} */
 
 /* Container des 2 collapses (Description + Équipements) */
 .logement__collapses {
@@ -114,7 +114,6 @@
   margin: 0;
 }
 
-
 /*  tags et ratting */
 
 .logement__host-rating {
@@ -124,18 +123,33 @@
 }
 
 /* Mobile : tags en haut, étoiles à droite en dessous (comme Kasa) */
+
 @media (max-width: 768px) {
   .logement__host-rating {
     flex-direction: row-reverse;
     align-items: center;
-    /* gap: 15px; */
+    justify-content: space-between;
+    gap: 15px;
   }
 
   /* .logement__host-rating  {
     align-self: flex-end;
   } */
-}
-.position-row{
+
+  .position-row{
   display: flex;
   flex-direction: column;
+}
+.logement__title{
+  font-size: 18px;
+  font-weight: 500;
+}
+.place-tile{
+  font-size: 16px;
+  font-weight: 300;
+}
+.logement-space{
+  margin-left: 10px;
+  margin-right: 10px;
+}
 }

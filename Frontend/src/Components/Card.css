@@ -1,6 +1,6 @@
 .card {
   position: relative;
-  height: 340px;
+  height: 300px;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -40,10 +40,11 @@
   z-index: 1;
 }
 @media (max-width: 768px) {
-.cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
 
- }
+  .card {
+  height: 250px;
+  
+  }
+
+  
+}
