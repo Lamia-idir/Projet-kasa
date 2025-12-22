@@ -1,7 +1,7 @@
 .gallery {
   background: #f6f6f6;
   border-radius: 25px;
-  padding: 50px;
+  padding:30px;
   margin-bottom: 30px;
    margin-left: 50px ;
   margin-right: 50px;
@@ -27,5 +27,7 @@
     gap: 20px;
     padding: 0;
     background: transparent;
+    margin: 10px 10px;
+
   }
 }

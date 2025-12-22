@@ -39,3 +39,11 @@
   margin: 0;
   z-index: 1;
 }
+@media (max-width: 768px) {
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+ }
