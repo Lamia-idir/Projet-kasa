@@ -13,8 +13,8 @@
 }
 
 .header__logo {
-  width: 200px;
-  margin-left: 0px;
+  width: 150px;
+  margin-left: 30px;
 }
 
 .header__links {
@@ -57,5 +57,9 @@
 .header__nav {
   margin-right:20px;
   margin-left: 0px;
+}
+.header__logo {
+  width: 100px;
+  margin-left:10px;
 }
 }
