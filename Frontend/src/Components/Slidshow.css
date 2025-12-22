@@ -1,7 +1,7 @@
 .slidshow {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 300px;
   border-radius: 25px;
   overflow: hidden;
 }
@@ -10,6 +10,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  overflow: hidden;
 }
 
 /* Flèches */
@@ -43,4 +44,17 @@
   transform: translateX(-50%);
   color: white;
   font-size: 18px;
+}
+
+@media (max-width: 768px){
+
+.slidshow {
+  height: 250px;
+  margin-left: 0px ;
+  margin-right: 0px ;
+}
+  .slidshow__img{ height: 250px;width: 100%; }
+  .slidshow__arrow{ width: 56px; height: 56px; }
+  .slidshow__arrow i{ font-size: 35px; }
+  .slidshow__count{ font-size: 20px; }
 }

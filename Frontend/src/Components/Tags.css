@@ -1,7 +1,6 @@
 .tags {
   display: flex;
-  flex-wrap: wrap;   /* si 4 tags, ça passe à la ligne */
-  gap: 10px;
+  gap: 5px;
 }
 
 .tags__item {

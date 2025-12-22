@@ -126,7 +126,7 @@
 /* Mobile : tags en haut, étoiles à droite en dessous (comme Kasa) */
 @media (max-width: 768px) {
   .logement__host-rating {
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     /* gap: 15px; */
   }
@@ -135,9 +135,7 @@
     align-self: flex-end;
   } */
 }
-.postion-row{
+.position-row{
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
-  margin-top: 20px;
 }

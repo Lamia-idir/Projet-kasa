@@ -14,3 +14,9 @@
 .apropos > *{
   max-width: 900px;
 }
+
+@media (max-width: 768px) {
+  .apropos{
+    margin: 20px 10px;
+  }
+    }

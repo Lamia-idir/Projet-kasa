@@ -1,13 +1,15 @@
 .host {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  gap: 10px;
+  gap:5px;
 }
 
 .host-name {
   color: #ff6060;
   font-size: 18px;
   text-align: right;
+  max-width: 100px;
 }
 
 .host-picture {
