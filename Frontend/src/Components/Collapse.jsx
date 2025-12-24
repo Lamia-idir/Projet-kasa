@@ -14,7 +14,7 @@ export default function Collapse({ title, children, content}) {
 
       {open && (
         <div className="collapse__content">
-          <p> {body}</p>
+           {body}
         </div>
       )}
     </div>

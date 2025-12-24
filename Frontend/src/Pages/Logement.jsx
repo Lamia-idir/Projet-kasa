@@ -18,8 +18,8 @@ export default function Logement() {
 const [notFound, setNotFound] = useState(false);
 
  useEffect(() => {
-  setLoading(true);
-  setNotFound(false);
+  // setLoading(true);
+  // setNotFound(false);
 
   fetch(`http://localhost:8080/api/properties/${id}`)
     .then((res) => {

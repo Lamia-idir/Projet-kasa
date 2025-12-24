@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1766501696123" clover="3.2.0">
+  <project timestamp="1766501696124" name="All files">
+    <metrics statements="6" coveredstatements="6" conditionals="7" coveredconditionals="7" methods="4" coveredmethods="4" elements="17" coveredelements="17" complexity="0" loc="6" ncloc="6" packages="1" files="4" classes="4"/>
+    <file name="Collapse.css" path="C:\Users\lamia\Documents\Projet-kasa\Frontend\src\Components\Collapse.css">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+    </file>
+    <file name="Collapse.jsx" path="C:\Users\lamia\Documents\Projet-kasa\Frontend\src\Components\Collapse.jsx">
+      <metrics statements="4" coveredstatements="4" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <line num="5" count="6" type="stmt"/>
+      <line num="6" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="8" count="6" type="stmt"/>
+      <line num="10" count="3" type="stmt"/>
+    </file>
+    <file name="Tags.css" path="C:\Users\lamia\Documents\Projet-kasa\Frontend\src\Components\Tags.css">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+    </file>
+    <file name="Tags.jsx" path="C:\Users\lamia\Documents\Projet-kasa\Frontend\src\Components\Tags.jsx">
+      <metrics statements="2" coveredstatements="2" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
+      <line num="4" count="2" type="stmt"/>
+      <line num="7" count="3" type="stmt"/>
+    </file>
+  </project>
+</coverage>

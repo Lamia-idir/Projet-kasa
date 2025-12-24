@@ -10,6 +10,8 @@
   margin-left: calc(-1 * 20px);
   margin-right: calc(-1 * 20px);
   width: calc(100% + 40px);
+  box-sizing: border-box;
+   overflow-x: hidden;
 }
 
 .footer__logo {
