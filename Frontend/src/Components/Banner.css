@@ -37,8 +37,12 @@
 
   .banner__text {
     transform: translate(-50%, -50%);
-    font-size: 14px;
-    text-align: center;
+    font-size: 18px;
+    text-align:left;
+     left: 20px;                 /* aligné au début */
+    transform: translateY(-50%);
+    max-width: 170px;
+   
   }
 }
 
