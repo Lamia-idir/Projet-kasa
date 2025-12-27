@@ -7,8 +7,21 @@ export default function Slidshow({pictures}) {
 
   if (total === 0) return null;
 
-  const prev = () => setIndex((i) => (i === 0 ? total - 1 : i - 1));
-  const next = () => setIndex((i) => (i === total - 1 ? 0 : i + 1));
+  const prev = () => {
+  if (index === 0) {
+    setIndex(total - 1);
+  } else {
+    setIndex(index - 1);
+  }
+};
+
+const next = () => {
+  if (index === total - 1) {
+    setIndex(0);
+  } else {
+    setIndex(index + 1);
+  }
+};
 
   return (
     <div className="slidshow">

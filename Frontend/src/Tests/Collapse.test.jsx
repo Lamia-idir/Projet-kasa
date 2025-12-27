@@ -1,6 +1,6 @@
 import { describe, test, expect } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
-import Collapse from "./Collapse";
+import Collapse from "../Components/Collapse";
 describe("Collapse component", () => {
   test("affiche le titre", () => {
     render(<Collapse title="Description" content="Contenu test" />);

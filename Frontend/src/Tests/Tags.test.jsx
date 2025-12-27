@@ -1,6 +1,6 @@
 import { describe, test, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
-import Tags from "./Tags";
+import Tags from "../Components/Tags";
 
 describe("Tags component", () => {
   test("affiche tous les tags", () => {

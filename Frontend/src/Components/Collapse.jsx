@@ -12,11 +12,7 @@ export default function Collapse({ title, children, content}) {
         <span className={`collapse__arrow ${open ? "open" : ""}`}><i className="fa-solid fa-chevron-up"></i></span>
       </button>
 
-      {open && (
-        <div className="collapse__content">
-           {body}
-        </div>
-      )}
+      {open ? (<div className="collapse__content"> {body}</div>) : null}
     </div>
   );
 }
