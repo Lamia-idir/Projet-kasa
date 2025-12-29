@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for Collapse.css</title>
+    <title>Code coverage report for Card.css</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> Collapse.css</h1>
+        <h1><a href="index.html">All files</a> Card.css</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -111,7 +111,13 @@
 <a name='L46'></a><a href='#L46'>46</a>
 <a name='L47'></a><a href='#L47'>47</a>
 <a name='L48'></a><a href='#L48'>48</a>
-<a name='L49'></a><a href='#L49'>49</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -159,55 +165,67 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">.collapse {
-  /* width: 75%; */
-  margin: 0 auto 30px auto;
-  display: flex;
-  flex-direction: column;
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">.card {
+  position: relative;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none; /* important car Card est un Link */
 }
-.collapse__header {
-  /* width: 100%; */
-  height: 40px;
-  background: #ff6060;
+&nbsp;
+/* image */
+.card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+&nbsp;
+/* dégradé sombre en bas */
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+&nbsp;
+/* titre */
+.card__title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
   color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 0px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  z-index: 1;
+  max-width: 250px;
+}
+@media (max-width: 768px) {
+&nbsp;
+  .card {
+  height: 250px;
+  
+  }
+  .card__title {
   font-size: 16px;
   font-weight: 500;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
+  max-width: 200px;
+  
 }
-&nbsp;
-.collapse__arrow {
-  font-size: 24px;
-  transition: transform 0.3s ease;
-}
-&nbsp;
-.collapse__arrow.open {
-  transform: rotate(-180deg);
-}
-&nbsp;
-.collapse__content {
-  background: #f6f6f6;
-  color: #000;
-  padding: 10px;
-  border-radius: 0 0 5px 5px;
-  font-size: 18px;
-   font-family: "Montserrat", sans-serif;
-}
-.collapse__title {
-  font-size: 16px;
-  font-weight:200;
-  color: white;
-}
-&nbsp;
-&nbsp;
- @media (max-width: 768px) {
- 
-}</pre></td></tr></table></pre>
+ }</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
