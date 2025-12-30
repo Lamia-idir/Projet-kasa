@@ -14,13 +14,11 @@ import Host from "../Components/Host";
 export default function Logement() {
   const { id } = useParams();
   const [logement, setLogement] = useState(null);
-  const [loading, setLoading] = useState(true);
-const [notFound, setNotFound] = useState(false);
+  const [loading, setLoading] = useState(true); //gérer l’affichage pendant le chargement des données.
+const [notFound, setNotFound] = useState(false); // gérer les erreurs, notamment le cas où l’ID n’existe pas.
 
  useEffect(() => {
-  // setLoading(true);
-  // setNotFound(false);
-
+ 
   fetch(`http://localhost:8080/api/properties/${id}`)
     .then((res) => {
       if (!res.ok) {

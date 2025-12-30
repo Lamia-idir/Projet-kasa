@@ -9,10 +9,14 @@
 .apropos{
   display: flex;
   flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .apropos > *{
-  max-width: 900px;
+  max-width: 80%;
 }
 
 @media (max-width: 768px) {
