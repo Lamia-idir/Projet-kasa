@@ -49,18 +49,32 @@
   }
 
   .header__links a {
-    font-size: 12px;
+    font-size: 10px;
+    font-weight: 500;
+     text-transform: uppercase;
   }
   .header__links a.active {
   border-bottom: 1px solid #000;
 }
-.header__nav {
+/* .header__nav {
   margin-right:20px;
   margin-left: 5px;
   margin-bottom: 20px;
+
+} */
+ .header__nav {
+  display: flex;
+  justify-content:center;
+  margin-right:10px;
+  gap: 60px;
+  margin-left: 5px;
+  padding: 10px;
 }
 .header__logo {
   width: 100px;
-  margin-left:10px;
+  margin-left:5px;
 }
+.header__links {
+    gap: 40px;
+  }
 }

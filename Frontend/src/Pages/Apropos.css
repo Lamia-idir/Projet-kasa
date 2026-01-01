@@ -23,4 +23,8 @@
   .apropos{
     margin: 20px 10px;
   }
+
+  .apropos > *{
+  max-width: 100%;
+}
     }
