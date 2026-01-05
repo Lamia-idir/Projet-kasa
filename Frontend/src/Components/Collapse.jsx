@@ -14,8 +14,8 @@ export default function Collapse({ title, children, content}) {
     
   
       <div className={`collapse__content ${open ? "open" : ""}`}>
-  <div className="collapse__contentInner">{body}</div>
-</div>
+       <div className="collapse__contentInner">{body}</div>
+       </div>
     </div>
   );
 }
