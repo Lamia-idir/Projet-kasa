@@ -59,17 +59,14 @@ if (!logement) return null;
        <div className="logement__collapses">
 
                 {/* Description */}
-         <Collapse title="Description">
-              <p>{logement.description}</p>
-         </Collapse>
-      
+         <Collapse title="Description"><p>{logement.description}</p></Collapse>
                 {/* Équipements */}
          <Collapse title="Équipements">
              <ul className="equipments">
                 {logement.equipments.map((equipement, index) => (
                <li key={index}>{equipement}</li>
           ))}
-            </ul>
+             </ul>
          </Collapse>
 
         </div>

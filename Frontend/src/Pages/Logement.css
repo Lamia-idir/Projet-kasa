@@ -88,7 +88,7 @@
 @media (max-width: 768px) {
   .logement__collapses {
     flex-direction: column;
-    gap: 20px;
+    gap:0px;
   }
 
   .collapse__header {
