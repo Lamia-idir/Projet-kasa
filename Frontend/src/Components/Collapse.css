@@ -24,7 +24,7 @@
   font-weight: 700;
 }
 /* TITLE */
-.colLapse__title {
+.collapse__title {
   font-size: 24px;
   font-weight: 600;
   color: #fff;
@@ -82,7 +82,7 @@ will-change: transform, opacity;
 }
 
  @media (max-width: 768px) {
-  .colLapse__title { 
+  .collapse__title { 
   font-size: 18px;
   font-weight: 500;
    }
